@@ -83,12 +83,12 @@ input, select { vertical-align: middle; }
  * Font normalization inspired by YUI Library's fonts.css: developer.yahoo.com/yui/
  */
 
-div.ipynb .cell { font:13px/1.231 sans-serif; *font-size:small; } /* Hack retained to preserve specificity */
+div.ipynb .cell { font:16px/1.231 sans-serif; *font-size:small; } /* Hack retained to preserve specificity */
 select, input, textarea, button { font:99% sans-serif; }
 
-/* Normalize monospace sizing:
+/* Normalize "Ubuntu Mono", monospace sizing:
    en.wikipedia.org/wiki/MediaWiki_talk:Common.css/Archive_11#Teletype_style_fix_for_Chrome */
-pre, code, kbd, samp { font-family: monospace, sans-serif; }
+pre, code, kbd, samp { font-family: "Ubuntu Mono", monospace, sans-serif; }
 
 em,i { font-style: italic; }
 b,strong { font-weight: bold; }
@@ -405,7 +405,7 @@ div.prompt {
     /* This 0.4em is tuned to match the padding on the CodeMirror editor. */
     padding: 0.4em;
     margin: 0px;
-    font-family: monospace;
+    font-family: "Ubuntu Mono", monospace;
     text-align:right;
 }
 
@@ -495,7 +495,7 @@ div.output_subarea {
 div.output_text {
     text-align: left;
     color: black;
-    font-family: monospace;
+    font-family: "Ubuntu Mono", monospace;
 }
 
 /* stdout/stderr are 'text' as well as 'stream', but pyout/pyerr are *not* streams */
@@ -547,7 +547,7 @@ div.text_cell_render {
 }
 
 /* The following gets added to the <head> if it is detected that the user has a
- * monospace font with inconsistent normal/bold/italic height.  See
+ * "Ubuntu Mono", monospace font with inconsistent normal/bold/italic height.  See
  * notebookmain.js.  Such fonts will have keywords vertically offset with
  * respect to the rest of the text.  The user should select a better font.
  * See: https://github.com/ipython/ipython/issues/1503
@@ -596,7 +596,7 @@ div.text_cell_render {
     padding: 0px;
     margin: 0px;
     overflow: auto;
-    font-family: monospace;
+    font-family: "Ubuntu Mono", monospace;
 }
 
 option.context {
@@ -617,7 +617,7 @@ option.introspection {
     padding: 0px;*/
     border-bottom: black solid 1px;
     padding: 1px;
-    font-family: monospace;
+    font-family: "Ubuntu Mono", monospace;
 }
 
 pre.dialog {
@@ -636,7 +636,7 @@ p.dialog {
     display: inline-block;
     width: 15ex;
     text-align: right;
-    font-family: monospace;
+    font-family: "Ubuntu Mono", monospace;
 }
 
 .shortcut_descr {
@@ -648,7 +648,7 @@ p.dialog {
 pre, code, kbd, samp { white-space: pre-wrap; }
 
 #fonttest {
-    font-family: monospace;
+    font-family: "Ubuntu Mono", monospace;
 }
 
 .js-error {

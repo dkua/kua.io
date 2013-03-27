@@ -8,6 +8,12 @@
  *
  * Designed and built with all the love in the world @twitter by @mdo and @fat.
  */
+
+ /* Fonts */
+ @import url(http://fonts.googleapis.com/css?family=Open+Sans);
+ @import url(http://fonts.googleapis.com/css?family=Ubuntu+Mono);
+ @import url(http://fonts.googleapis.com/css?family=Droid+Serif);
+
 .clearfix {
   *zoom: 1;
 }
@@ -206,7 +212,7 @@ textarea {
 }
 body {
   margin: 0;
-  font-family: Georgia, "Times New Roman", Times, serif;
+  font-family: "Droid Serif", Georgia, "Times New Roman", Times, serif;
   font-size: 1.15em;
   line-height: 1.3em;
   color: #333333;
@@ -618,7 +624,7 @@ h4,
 h5,
 h6 {
   margin: 0.2em 0;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: bold;
   line-height: 1em;
   color: inherit;
@@ -631,7 +637,7 @@ h4 alt,
 h5 alt,
 h6 alt {
   margin: 0.2em 0;
-  font-family: Georgia, "Times New Roman", Times, serif;
+  font-family: "Droid Serif", Georgia, "Times New Roman", Times, serif;
   font-weight: bold;
   line-height: 1em;
   color: inherit;
@@ -824,7 +830,7 @@ address {
 code,
 pre {
   padding: 0 3px 2px;
-  font-family: Monaco, Menlo, Consolas, "Courier New", monospace;
+  font-family: "Ubuntu Mono", Monaco, Menlo, Consolas, "Courier New", monospace;
   font-size: -0.8500000000000001em;
   color: #333333;
   -webkit-border-radius: 3px;
@@ -906,7 +912,7 @@ input,
 button,
 select,
 textarea {
-  font-family: Georgia, "Times New Roman", Times, serif;
+  font-family: "Droid Serif", Georgia, "Times New Roman", Times, serif;
 }
 label {
   display: block;
@@ -3750,7 +3756,7 @@ input[type="submit"].btn.btn-mini {
   padding: 19.35px 20px 19.35px;
   margin-left: -20px;
   font-size: 2em;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 200;
   color: #333333;
   text-shadow: 0 1px 0 #ffffff;
@@ -3836,7 +3842,7 @@ input[type="submit"].btn.btn-mini {
 .navbar-search .search-query {
   margin-bottom: 0;
   padding: 4px 14px;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 13px;
   font-weight: normal;
   line-height: 1;
