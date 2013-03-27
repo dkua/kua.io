@@ -1,6 +1,9 @@
 {% extends "base.html" %}
 {% block content_title %}{% endblock %}
-{% block content %}        
+{% block content %} 
+<div class="jumbotron">
+  <h1>HELLO WORLD</h1>
+</div>       
 {% if articles %}
   <table class="table table-condensed table-hover">
     <thead><tr><th>Notes</th><th></th></tr></thead>
@@ -15,7 +18,7 @@
              {{ article.title}}
           </a>
           </td>
-          <td><p class="pull-right">{{ article.locale_date }}</p></td>
+          <td class="rightCell">{{ article.locale_date }}</td>
         </tr>
       </tbody>
     </article>

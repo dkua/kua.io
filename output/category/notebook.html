@@ -17,15 +17,15 @@
       /* Custom container */
       .container-narrow {
         margin: 0 auto;
-        max-width: 700px;
+        max-width: 900px;
       }
 
       /* Main marketing message and sign up button */
       .jumbotron {
         text-align: center;
       }
-      .jumbotron h1 {
-        font-size: 72px;
+      .jumbotron h1, h2, h3, h4, h5, h6 {
+        font-family: Georgia, "Times New Roman", Times, serif;
         line-height: 1;
       }
       .jumbotron .btn {
@@ -39,6 +39,10 @@
       }
       .marketing p + h4 {
         margin-top: 28px;
+      }
+      .table th.rightCell,
+      .table td.rightCell {
+        text-align: right;
       }
   </style>
     <link href="../theme/css/bootstrap-responsive.min.css" rel="stylesheet">
@@ -86,7 +90,10 @@
     </div>
     <div class="container-narrow">
       <hr>
-                
+         
+<div class="jumbotron">
+  <h1>HELLO WORLD</h1>
+</div>       
   <table class="table table-condensed table-hover">
     <thead><tr><th>Notes</th><th></th></tr></thead>
       <article>
@@ -99,7 +106,7 @@
              First Post!
           </a>
           </td>
-          <td><p class="pull-right">March 25, 2013</p></td>
+          <td class="rightCell">March 25, 2013</td>
         </tr>
       </tbody>
     </article>

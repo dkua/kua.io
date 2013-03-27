@@ -20,3 +20,6 @@ THEME = "themes/dkua-bootstrap"
 # Allows for blogging with IPython notebooks
 PLUGINS = ["pelican.plugins.ipythonnb"]
 MARKUP = ("md", "ipynb")
+
+# Default files to always output
+FILES_TO_COPY = (('default/CNAME', 'CNAME'),)
