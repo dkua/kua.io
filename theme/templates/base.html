@@ -8,43 +8,6 @@
     <meta name="author" content="">
     <link href="{{ SITEURL }}/theme/css/bootstrap.css" rel="stylesheet">
     <link href="{{ SITEURL }}/theme/css/font-awesome.min.css" rel="stylesheet">
-    <style type="text/css">
-      body {
-        padding-top: 20px;
-        padding-bottom: 40px;
-      }
-
-      /* Custom container */
-      .container-narrow {
-        margin: 0 auto;
-        max-width: 900px;
-      }
-
-      /* Main marketing message and sign up button */
-      .jumbotron {
-        text-align: center;
-      }
-      .jumbotron h1, h2, h3, h4, h5, h6 {
-        font-family: Georgia, "Times New Roman", Times, serif;
-        line-height: 1;
-      }
-      .jumbotron .btn {
-        font-size: 21px;
-        padding: 14px 24px;
-      }
-
-      /* Supporting marketing content */
-      .marketing {
-        margin: 60px 0;
-      }
-      .marketing p + h4 {
-        margin-top: 28px;
-      }
-      .table th.rightCell,
-      .table td.rightCell {
-        text-align: right;
-      }
-  </style>
     <link href="{{ SITEURL }}/theme/css/bootstrap-responsive.min.css" rel="stylesheet">
 
     {% if FEED_ALL_ATOM %}
@@ -69,7 +32,7 @@
       <div class="navbar  navbar-static-top">
         <div class="navbar-inner">
         <div class="container-narrow">
-            <a class="brand" href="/">David Kua</a>
+          <a class="brand" href="/">David Kua</a>
           <a class="btn btn-navbar pull-right" 
              data-toggle="collapse" 
              data-target=".nav-collapse">
@@ -83,13 +46,7 @@
                     <a href="/about.html">About</a>
                 </li>
                 <li>
-                    <a href="/notes.html">Notes</a>
-                </li>
-                <li>
                     <a href="/projects.html">Projects</a>
-                </li>
-                <li>
-                    <a href="/contact.html">Contact</a>
                 </li>
             </ul>
           </div>
@@ -98,8 +55,10 @@
     </div>
     <div class="container-narrow">
       <hr>
+      <div class="content">
         {% block content %}
         {% endblock %}
+      </div>
       <hr>
       <div class="footer">
           <p class="pull-left">© David Kua 2013</p>

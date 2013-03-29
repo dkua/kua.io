@@ -9,10 +9,13 @@
  * Designed and built with all the love in the world @twitter by @mdo and @fat.
  */
 
+ /* Custom CSS */
+ @import url(/theme/css/extra.css);
+
  /* Fonts */
  @import url(http://fonts.googleapis.com/css?family=Open+Sans);
  @import url(http://fonts.googleapis.com/css?family=Ubuntu+Mono);
- @import url(http://fonts.googleapis.com/css?family=Droid+Serif);
+ @import url(http://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic);
 
 .clearfix {
   *zoom: 1;
@@ -767,7 +770,7 @@ dd {
 hr {
   /*margin: 1em 0;*/
   border: 0;
-  border-top: 1px solid #eeeeee;
+  border-top: 1px solid #cccccc;
   border-bottom: 1px solid #ffffff;
 }
 abbr[title],
@@ -3755,7 +3758,7 @@ input[type="submit"].btn.btn-mini {
   display: block;
   padding: 19.35px 20px 19.35px;
   margin-left: -20px;
-  font-size: 2em;
+  font-size: 1.5em;
   font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 200;
   color: #333333;
