@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*- #
 
 AUTHOR = u"David Kua"
-SITENAME = u"A repository of my thoughts | David Kua"
+SITENAME = u"A repository for my thoughts | David Kua"
 SITEURL = "http://davidkua.com"
 
 # My links
@@ -13,6 +13,10 @@ EMAIL = "david@davidkua.com"
 DEFAULT_LANG = u"en"
 TIMEZONE = "UTC"
 DEFAULT_DATE_FORMAT = ('%B %d, %Y')
+
+# Changes the output URL and file locations
+ARTICLE_URL = "notes/{date:%Y}/{date:%m}/{slug}.html"
+ARTICLE_SAVE_AS = "notes/{date:%Y}/{date:%m}/{slug}.html"
 
 DEFAULT_PAGINATION = 10
 
@@ -28,7 +32,9 @@ FILES_TO_COPY = (('CNAME', 'CNAME'),)
 # Navigation links' pages
 DIRECT_TEMPLATES = (("index", "about", "projects"))
 
+# Use souce folder as the category
 USE_FOLDER_AS_CATEGORY = True
 
+# Output the source IPython notebook files for download
 OUTPUT_SOURCES = True
 OUTPUT_SOURCES_EXTENSION = (".ipynb")

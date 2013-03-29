@@ -9,7 +9,11 @@
     <div class="header">
       <header>
         <h3 class="entry-title">{{ article.title}}</h3>
-        {{ article.locale_date }}
+        {{ article.locale_date }}&nbsp-&nbsp
+        {% if article.ipython %}
+          <a href="{{ SITEURL }}/{{ article.url.replace(".html", ".ipynb") }}">
+            Download the notebook</a>
+        {% endif %}
       </header>
     </div>
     <br />

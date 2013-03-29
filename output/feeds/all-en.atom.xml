@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>A repository of my thoughts | David Kua</title><link href="http://davidkua.com/" rel="alternate"></link><link href="http://davidkua.com/feeds/all-en.atom.xml" rel="self"></link><id>http://davidkua.com/</id><updated>2013-03-29T00:00:00+00:00</updated><entry><title>Hello World</title><link href="http://davidkua.com/hello-world.html" rel="alternate"></link><updated>2013-03-29T00:00:00+00:00</updated><author><name>David Kua</name></author><id>tag:davidkua.com,2013-03-29:hello-world.html</id><summary type="html">&lt;div class="ipynb"&gt;&lt;div class="cell border-box-sizing code_cell vbox"&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>A repository for my thoughts | David Kua</title><link href="http://davidkua.com/" rel="alternate"></link><link href="http://davidkua.com/feeds/all-en.atom.xml" rel="self"></link><id>http://davidkua.com/</id><updated>2013-03-29T16:00:00+00:00</updated><entry><title>PyCon 2013</title><link href="http://davidkua.com/notes/2013/03/pycon-2013.html" rel="alternate"></link><updated>2013-03-29T16:00:00+00:00</updated><author><name>David Kua</name></author><id>tag:davidkua.com,2013-03-29:notes/2013/03/pycon-2013.html</id><summary type="html">&lt;div class="ipynb"&gt;&lt;/div&gt;</summary></entry><entry><title>Hello World</title><link href="http://davidkua.com/notes/2013/03/hello-world.html" rel="alternate"></link><updated>2013-03-29T12:00:00+00:00</updated><author><name>David Kua</name></author><id>tag:davidkua.com,2013-03-29:notes/2013/03/hello-world.html</id><summary type="html">&lt;div class="ipynb"&gt;&lt;div class="cell border-box-sizing code_cell vbox"&gt;
 &lt;div class="input hbox"&gt;
 &lt;div class="prompt input_prompt"&gt;In&amp;nbsp;[1]:&lt;/div&gt;
 &lt;div class="input_area box-flex1"&gt;
@@ -19,5 +19,8 @@
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
+&lt;p&gt;Hi! Welcome to the first post of my new site. &lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;</summary></entry></feed>
