@@ -1,13 +1,32 @@
 {% extends "base.html" %}
 {% block content_title %}{% endblock %}
 {% block content %} 
-<title>About</title>
-<h3>About</h3>
-<p>My name is <strong>David Kua</strong>, I'm 20, I live in a city called Toronto and am pretty much enjoying my life.</p>
+<h3>Hey. I'm David.</h3>
+<h4>I'm a student and a developer.</h4>
+<br />
 
-<p>I'm mostly a Web developer, but as you may suppose, I'm not a Web designer. I speak at conferences, sometimes.</p>
+<p>
+  I live in <a href="http://en.wikipedia.org/wiki/Toronto">Toronto, Canada</a> 
+  where I spend my days studying Computer Science at the 
+  <a href="http://www.utsc.utoronto.ca/">University of Toronto Scarborough</a> 
+  and trying to fend off imposter syndrome. 
+</p>
 
-<p>I also practice photography, and probably rant (in French) a bit too much.</p>
+<p>
+  My tool of choice is Python but I'm currently adding Javascript and Go to my 
+  toolbox too.
+</p>
 
-<p>Oh, and one more thing: this blog is entirely open source.</p>
+<p>
+  When not programming or knee-deep in homework you might find me exploring 
+  Toronto's food and beer scene, reading a good book, or traveling around some 
+  foreign region.
+</p>
+
+<p>
+  Feel free to contact me on <a href="{{GITHUBURL}}">Github</a>, 
+  <a href="{{TWITTERURL}}">Twitter</a>, or by email at 
+  <a href="mailto:{{EMAIL}}">david@davidkua.com</a>.
+</p>
+
 {% endblock content %}
