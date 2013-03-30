@@ -15,8 +15,8 @@ TIMEZONE = "UTC"
 DEFAULT_DATE_FORMAT = ('%B %d, %Y')
 
 # Changes the output URL and file locations
-ARTICLE_URL = "notes/{date:%Y}/{date:%m}/{slug}.html"
-ARTICLE_SAVE_AS = "notes/{date:%Y}/{date:%m}/{slug}.html"
+ARTICLE_URL = "notes/{date:%Y}/{date:%m}/{slug}/"
+ARTICLE_SAVE_AS = "notes/{date:%Y}/{date:%m}/{slug}/index.html"
 
 DEFAULT_PAGINATION = 10
 
@@ -35,6 +35,5 @@ DIRECT_TEMPLATES = (("index", "about", "projects"))
 # Use souce folder as the category
 USE_FOLDER_AS_CATEGORY = True
 
-# Output the source IPython notebook files for download
-OUTPUT_SOURCES = True
-OUTPUT_SOURCES_EXTENSION = (".ipynb")
+# Copy images and IPython Notebooks to the static folder
+STATIC_PATHS = (["images", "2013"])
