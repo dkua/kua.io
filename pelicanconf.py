@@ -4,7 +4,7 @@ from __future__ import unicode_literals
 
 AUTHOR = u'David Kua'
 AUTHOR_EMAIL = 'david@davidkua.com'
-SITENAME = u'David Kua'
+SITENAME = u'kua.io'
 SITEURL = ''
 TAGLINE = "Code and carrot cake"
 
@@ -54,3 +54,7 @@ YEAR_ARCHIVE_SAVE_AS = "posts/{date:%Y}/index.html"
 
 PAGE_URL = "{slug}/index.html"
 PAGE_SAVE_AS = "{slug}/index.html"
+
+CATEGORY_SAVE_AS = False
+AUTHOR_SAVE_AS = False
+AUTHORS_SAVE_AS = False
