@@ -1,10 +1,7 @@
-_site/*
-_theme_packages/*
-
+*.pyc
+output/
 Thumbs.db
 .DS_Store
 
 !.gitkeep
 
-.rbenv-version
-.rvmrc
