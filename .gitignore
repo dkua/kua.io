@@ -1,4 +1,5 @@
 *.pyc
+*.pid
 output/
 Thumbs.db
 .DS_Store
