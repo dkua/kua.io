@@ -3,7 +3,7 @@ Slug: about
 
 # Hey there, my name is David Kua and I am...
 
-* a third-year computer science student at the University of Toronto.
+* a third-year computer science student at the [University of Toronto](http://www.utsc.utoronto.ca/ "UTSC").
 * a co-organizer of the Go Toronto meetup, [golangTO.com](http://golangTO.com "Go Toronto").
 * University of Toronto's Head Delegate for [CUSEC 2014](http://2014.cusec.net "CUSEC 2014").
 * currently working part-time as a Student Developer for the Ontario Council of University Libraries (OCUL) [Scholars Portal](http://www.scholarsportal.info "Scholars Portal").
