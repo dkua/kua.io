@@ -9,4 +9,4 @@ Slug: about
 * currently working part-time as a Student Developer for the Ontario Council of University Libraries (OCUL) [Scholars Portal](http://www.scholarsportal.info "Scholars Portal").
 * looking for an internship this summer, if you're interested then please take a look at my resume [here](http://bit.ly/dkua-resume "My Resume").
 
-You can find me on [Github](https://github.com/dkua), [Twitter](http://twitter.com/davidkua "davidkua"), or send me an email at, david [at] kua.io
+You can find me on [Github](https://github.com/dkua "dkua on Github"), [Twitter](http://twitter.com/davidkua "@davidkua"), or send me an email at, david [at] kua.io
