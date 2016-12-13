@@ -1,12 +1,19 @@
-Title: Hello world, I have cookies!
-Date: 2014-01-14
-Tags: baking, recipes
-Slug: hello-world
++++
+title = "Hello world, I have cookies!"
+date = "2014-01-14"
+tags = ["baking", "recipes"]
+slug = "hello-world"
++++
 
-Since I am revamping my personal site I might as well put something half useful here as my first post. For the first time I am going to be writing down my super secret cookie recipe that all my friends seem to enjoy. Also so I can just point them here when they pester me for the recipe.
+Since I am revamping my personal site I might as well put something half useful here as my first post.
+For the first time I am going to be writing down my super secret cookie recipe that all my friends seem to enjoy.
+Also so I can just point them here when they pester me for the recipe.
+Enjoy!
 
-|   |   |
---- | ---
+---
+
+| Ingredient | Measurement |
+:--- | :---
 Melted Butter | 1.25 cups
 Brown Sugar | 1 cup
 White Sugar | 1 cup
@@ -24,5 +31,3 @@ Toffee Bits | 0.75 cup
 4. Mix butter mixture with flour mixture and add the chocolate chips and toffee bits.
 5. Scoop batter onto a parchment lined cookie sheet.
 6. Bake at 350F or until golden brown.
-
-Enjoy!

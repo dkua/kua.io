@@ -1,7 +1,8 @@
-Title: About Me
-Slug: about
++++
+title = "About me"
++++
 
-# Hey there, my name is David Kua and I am...
+##### Hey there, my name is David Kua and I am...
 
 * a third-year computer science student at the [University of Toronto](http://www.utsc.utoronto.ca/ "UTSC").
 * a co-organizer of the Go Toronto meetup, [golangTO.com](http://golangTO.com "Go Toronto").
@@ -9,4 +10,4 @@ Slug: about
 * currently working part-time as a Student Developer for the Ontario Council of University Libraries (OCUL) [Scholars Portal](http://www.scholarsportal.info "Scholars Portal").
 * looking for an internship this summer, if you're interested then please take a look at my resume [here](http://bit.ly/dkua-resume "My Resume").
 
-You can find me on [Github](https://github.com/dkua "dkua on Github"), [Twitter](http://twitter.com/davidkua "@davidkua"), or send me an email at, david [at] kua.io
+You can find me on [Github](https://github.com/dkua "dkua on Github"), [Twitter](http://twitter.com/davidkua "@davidkua"), or send me an email at, david@kua.io.

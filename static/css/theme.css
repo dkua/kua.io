@@ -1,0 +1,167 @@
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: Georgia, "Time New Roman", serif;
+  color: #00000F;
+  background-color: #FFFFF0;
+  font-size: 1.3rem;
+}
+
+body {
+  line-height: 1.6;
+}
+
+hr {
+  margin: 1rem 0;
+  height: 0;
+  display: block;
+  width: 100%;
+  border: 0;
+  border-top: 1px solid #696969;
+}
+
+img {
+  max-width: 100%;
+}
+
+blockquote {
+  margin: 0 0 1rem;
+  padding: 1rem 1rem 0;
+  color: #696969;
+  border-left: 1px solid currentColor;
+}
+
+blockquote cite {
+  display: block;
+  margin-top: 1rem;
+  font-style: italic;
+  font-size: .875rem;
+}
+
+blockquote cite:before {
+  content: "— "
+}
+
+a {
+  color: currentColor;
+  text-decoration: none;
+  border-bottom: 1px solid currentColor;
+}
+  a:hover {
+    text-decoration: none;
+    border-bottom: 0;
+  }
+
+ol, ul {
+  margin: 0 0 1rem 1.25rem;
+  padding: 0;
+  list-style-position: outside;
+}
+
+ol ol, ul ul, ul ol, ol ul {
+  margin-bottom: 0;
+}
+
+li {
+  margin: .3rem 0 0 0;
+}
+
+abbr {
+  border-bottom: 1px dashed currentColor;
+  cursor: help;
+}
+
+kbd, code, pre {
+  font-family: "Source Code Pro", monospace;
+  font-size: 0.7rem;
+  whitespace: pre;
+  overflow: auto;
+}
+
+pre {
+  max-width: 100%;
+  margin: 0 0 1rem;
+}
+
+kbd, code {
+  padding: .125rem .25rem 0;
+  margin: 0;
+  background-color: #e5e5e5;
+}
+
+article, section {
+  margin-bottom: 1rem;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0 0 .5rem;
+}
+
+h1 {
+  font-size: 1.6rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.75rem;
+}
+
+h4 {
+  font-size: 1.5rem;
+}
+
+h5 {
+  font-size: 1.25rem;
+}
+
+h6 {
+  font-size: 1rem;
+}
+
+p {
+  margin: 0 0 1rem;
+}
+
+time {
+  margin: 0 0 1rem;
+  color: #696969;
+}
+
+footer, .site-nav {
+  margin: 0 0 .5rem;
+  font-size: .7rem;
+  color: #696969;
+}
+
+  footer a, .site-nav a {
+    color: currentColor;
+  }
+
+  footer > *+*, .site-nav > *+* {
+    margin-left: .5rem;
+  }
+
+.container {
+  max-width: 34rem;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.site-nav {
+  margin-top: 2rem;
+  text-align: right;
+}
+
+.site-footer {
+  margin-bottom: 1rem;
+}
+
+.site-list {
+  margin: 0;
+  list-style-type: none;
+}

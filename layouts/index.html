@@ -1,0 +1,10 @@
+{{ define "main" }}
+{{ $.Scratch.Set "list-type" "posts" }}
+{{ partial "topic-list" . }}
+
+{{ $.Scratch.Set "list-type" "talks" }}
+{{ partial "topic-list" . }}
+
+{{ $.Scratch.Set "list-type" "projects" }}
+{{ partial "topic-list" . }}
+{{ end }}

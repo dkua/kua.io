@@ -1,0 +1,16 @@
+baseurl = "http://kua.io"
+title = "kua.io"
+PygmentsCodeFences = true
+pygmentsStyle = "monokai"
+
+[permalinks]
+  posts = "/:section/:year/:month/:day/:slug/"
+  talks = "/:section/:year/:month/:day/:slug/"
+  projects = "/:section/:year/:month/:day/:slug/"
+
+[params]
+  AuthorName = "David Kua"
+  Email = "david@kua.io"
+  SocialLinks = true
+  GithubUsername = "dkua"
+  TwitterUsername = "davidkua"

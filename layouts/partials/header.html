@@ -1,0 +1,15 @@
+{{ partial "nav.html" . }}
+
+{{ if and (ne .IsNode true) (ne .Date.IsZero true) }}
+  <time datetime="{{ .Date }}">{{ dateFormat "January 02, 2006" .Date }}</time>
+{{ end }}
+
+<header>
+  {{ if ne .IsHome true }}
+  <h1>{{ .Title }}</h1>
+  {{ end }}
+
+  {{ if and .IsHome (isset .Site.Params "Tagline") }}
+  <p>{{ .Site.Params.Tagline }}</p>
+  {{ end }}
+</header>

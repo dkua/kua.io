@@ -1,0 +1,14 @@
+{{ define "main" }}
+<article>
+  {{ range .Data.Pages.GroupByDate "2006" -}}
+    <section>
+      <h4>{{ .Key }}</h4>
+      <ol class="site-list">
+        {{ range .Pages -}}
+          {{ partial "li" . }}
+        {{ end }}
+      </ol>
+    </section>
+  {{ end }}
+</article>
+{{ end }}

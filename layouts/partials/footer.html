@@ -1,0 +1,16 @@
+<hr>
+<footer class="site-footer">
+    <span class="owner">&copy; {{ .Now.Format "2006" }} {{ .Site.Params.AuthorName }} — {{ .Site.Params.Email }}</span>
+
+  {{ if eq .Site.Params.SocialLinks true -}}
+
+    {{ if isset .Site.Params "TwitterUsername" -}}
+    <a href="https://twitter.com/{{ .Site.Params.TwitterUsername }}">@{{ .Site.Params.TwitterUsername }}</a>
+    {{- end }}
+
+    {{ if isset .Site.Params "GithubUsername" -}}
+    <a href="http://github.com/{{ .Site.Params.GithubUsername }}">github.com/{{ .Site.Params.GithubUsername }}</a>
+    {{- end }}
+
+  {{- end }}
+</footer>

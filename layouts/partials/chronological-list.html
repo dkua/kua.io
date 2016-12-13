@@ -1,0 +1,13 @@
+<h2>FUCK {{ $.Scratch.Get "list-type" }}</h2>
+<article>
+  {{ range (where .Data.Pages "Type" ($.Scratch.Get "list-type")).GroupByDate "2006" -}}
+    <section>
+      <h4>{{ .Key }}</h4>
+      <ol class="site-list">
+        {{ range .Pages -}}
+          {{ partial "li" . }}
+        {{ end }}
+      </ol>
+    </section>
+  {{ end }}
+</article>
