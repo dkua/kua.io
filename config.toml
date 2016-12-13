@@ -2,6 +2,7 @@ baseurl = "http://kua.io"
 title = "kua.io"
 PygmentsCodeFences = true
 pygmentsStyle = "monokai"
+canonifyurls = true
 
 [permalinks]
   posts = "/:section/:year/:month/:day/:slug/"
