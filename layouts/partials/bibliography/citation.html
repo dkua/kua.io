@@ -1,0 +1,17 @@
+{{ $ref := ($.Scratch.Get "ref") }}
+
+{{ $id := $ref.id }}
+{{ $type := $ref.type }}
+
+{{ $articles := (slice "article" "article-journal" "article-magazine" "article-newspaper") }}
+
+{{ if in $articles $type }}
+  <!-- Some kind of journal, magazine, or newspaper article -->
+  {{ partial "bibliography/article" $ }}
+{{ else if eq $type "no-type" }}
+  <!-- CSL: no-type = BibTeX: misc ~= Website -->
+  {{ partial "bibliography/website" $ }}
+{{ else }}
+  <!-- Catch-all, try book. -->
+  {{ partial "bibliography/book" $ }}
+{{ end }}

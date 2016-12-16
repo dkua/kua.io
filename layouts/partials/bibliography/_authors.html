@@ -1,0 +1,25 @@
+{{ $ref := $.Scratch.Get "ref" }}
+{{ $authors := $ref.author }}
+
+{{ $.Scratch.Set "_authors" slice }}
+{{ range $author := (first 3 $authors) }}
+  {{ if and (isset $author "family") (isset $author "given") }}
+    {{ $name := (printf "%s %s" (index $author "given") (index $author "family")) }}
+    {{ $.Scratch.Add "_authors" (slice $name) }}
+  {{ else if isset $author "family" }}
+    {{ $.Scratch.Add "_authors" (slice (index $author "family")) }}
+  {{ else if isset $author "given" }}
+    {{ $.Scratch.Add "_authors" (slice (index $author "given")) }}
+  {{ else if isset $author "literal" }}
+    {{ $.Scratch.Add "_authors" (slice (index $author "literal")) }}
+  {{ else }}
+    <!-- If this then citation is odd -->
+    {{ $.Scratch.Add "_authors" (slice "ERROR") }}
+  {{ end }}
+{{ end }}
+
+{{ if gt (len $authors) 3 }}
+  {{ $.Scratch.Set "authors" (printf "%s et al" (index ($.Scratch.Get "_authors") 0)) }}
+{{ else }}
+  {{ $.Scratch.Set "authors" (delimit ($.Scratch.Get "_authors") ", " " and ") }}
+{{ end }}

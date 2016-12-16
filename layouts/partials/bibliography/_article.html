@@ -1,0 +1,19 @@
+{{ $ref := $.Scratch.Get "ref" }}
+{{ $type := $ref.type }}
+
+{{ $.Scratch.Set "article" slice }}
+
+<!-- Journal, Newspaper, or Magazine Name -->
+{{ if isset $ref "container-title" }}
+  {{ $.Scratch.Add "article" (slice (index $ref "container-title")) }}
+{{ end }}
+
+<!-- Volume Number -->
+{{ if isset $ref "volume" }}
+  {{ $.Scratch.Add "article" (slice $ref.volume) }}
+{{ end }}
+
+<!-- Issue Number -->
+{{ if isset $ref "issue" }}
+  {{ $.Scratch.Add "article" (slice $ref.issue) }}
+{{ end }}

@@ -1,0 +1,40 @@
+<!-- Bibliography data -->
+{{ $numParams := len .Params }}
+{{ if eq $numParams 0 }}
+  {{ if isset .Page.Params "bibliography" }}
+    {{ $.Scratch.Set "bib_source" .Page.Params.bibliography }}
+  {{ end }}
+  {{ if isset .Page.Params "bibliography_ignore" }}
+    {{ $.Scratch.Set "bib_ignore" .Page.Params.bibliography_ignore }}
+  {{ end }}
+{{ else if eq $numParams 1 }}
+  {{ $.Scratch.Set "bib_source" (.Get 0) }}
+{{ else if eq $numParams 2 }}
+  {{ $.Scratch.Set "bib_source" (.Get 0) }}
+  {{ $ignore := (split (.Get 1) ",") }}
+  {{ $.Scratch.Set "bib_ignore" $ignore }}
+{{ end }}
+
+{{ if isset .Page.Params "bibliography" }}
+{{ $src := (index .Site.Data.bibliographies ($.Scratch.Get "bib_source")) }}
+{{ $ignore := $.Scratch.Get "bib_ignore" }}
+{{ $.Scratch.Set "length" (len $src) }}
+
+{{ if .Page.Params.bibliography_ignore }}
+  {{ $.Scratch.Set "refs" (where $src "id" "not in" $ignore) }}
+{{ else }}
+  {{ $.Scratch.Set "refs" $src }}
+{{ end }}
+
+<div class="bibliography">
+  <ul>
+  {{ range $ref := ($.Scratch.Get "refs") }}
+  {{ $.Scratch.Set "ref" $ref }}
+    <li id="citation-{{ $ref.id }}">
+    <div class="tag">{{ partial "bibliography/tag" $ }}</div>
+    <div class="citation">{{ partial "bibliography/citation" $ }}</div>
+    </li>
+  {{ end }}
+  </ul>
+</div>
+{{ end }}

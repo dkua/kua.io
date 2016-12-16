@@ -1,8 +1,0 @@
-<article>
-  <h5>{{ title ($.Scratch.Get "list-type") }}</h5>
-  {{ range (where .Data.Pages "Type" ($.Scratch.Get "list-type")) }}
-    <ol class="site-list">
-      {{ partial "li" . }}
-    </ol>
-  {{ end }}
-</article>

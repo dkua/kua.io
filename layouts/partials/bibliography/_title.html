@@ -1,0 +1,15 @@
+{{ $ref := $.Scratch.Get "ref" }}
+{{ $title := $ref.title }}
+
+<!-- Check for the "[...]{.nocase}" text added by pandoc-citeproc -->
+{{ $prefix := "[" }}
+{{ $suffix := "]{.nocase}" }}
+{{ if and (hasPrefix $title $prefix) (in $title $suffix) }}
+  {{ $.Scratch.Set "title" (substr $title 1 (sub 0 (len $suffix))) }}
+{{ else }}
+  {{ $.Scratch.Set "title" $title }}
+{{ end }}
+
+{{ $title := ($.Scratch.Get "title") }}
+<!-- Check and remove extraneous period from title -->
+{{ $.Scratch.Set "title" (trim $title ".") }}

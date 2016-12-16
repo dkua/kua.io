@@ -1,10 +1,20 @@
 {{ partial "nav.html" . }}
 
-{{ if and (ne .IsNode true) (ne .Date.IsZero true) }}
-  <time datetime="{{ .Date }}">{{ dateFormat "January 02, 2006" .Date }}</time>
-{{ end }}
-
 <header>
+  {{ if .IsHome }}
+    {{ if isset .Site.Params "message" }}
+      {{ (printf "> %s" .Site.Params.message) | markdownify }}
+    {{ end }}
+  {{ else }}
+    {{ if .Params.preamble }}
+      {{ (printf "> %s" .Params.preamble) | markdownify }}
+    {{ end }}
+  {{ end }}
+
+  {{ if and (ne .IsNode true) (ne .Date.IsZero true) }}
+    <time datetime="{{ .Date }}">{{ dateFormat "January 02, 2006" .Date }}</time>
+  {{ end }}
+
   {{ if ne .IsHome true }}
   <h1>{{ .Title }}</h1>
   {{ end }}

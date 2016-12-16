@@ -1,0 +1,9 @@
+{{ $ref := ($.Scratch.Get "ref") }}
+
+{{ partial "bibliography/_tag_authors" $ }}
+{{ partial "bibliography/_year" $ }}
+{{ if eq ($.Scratch.Get "year") "n.d" }}
+  {{ $.Scratch.Set "year" "n.d." }}
+{{ end }}
+
+{{ printf "[%s (%s)]" ($.Scratch.Get "tag_authors") ($.Scratch.Get "year") }}

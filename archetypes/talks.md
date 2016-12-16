@@ -1,3 +1,5 @@
 +++
 event = ""
+slides = ""
+video = ""
 +++

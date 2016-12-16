@@ -1,0 +1,25 @@
+<!-- Format
+(Authors). (Year). *(Title).* (Publisher, Place of publishing, Pages).
+-->
+{{ $str := "%s. %s. *%s.* %s." }}
+
+<!-- Initialize variables -->
+{{ $ref := ($.Scratch.Get "ref") }}
+{{ partial "bibliography/_authors" $ }}
+{{ partial "bibliography/_year" $ }}
+{{ partial "bibliography/_title" $ }}
+{{ partial "bibliography/_publish" $ }}
+{{ partial "bibliography/_pages" $ }}
+
+<!-- Variables -->
+{{ $authors := ($.Scratch.Get "authors") }}
+{{ $year := ($.Scratch.Get "year") }}
+{{ $title := ($.Scratch.Get "title") }}
+{{ $publish := ($.Scratch.Get "publish") }}
+{{ $pages := ($.Scratch.Get "pages") }}
+{{ $.Scratch.Set "_details" slice }}
+{{ $.Scratch.Add "_details" $publish }}
+{{ $.Scratch.Add "_details" (slice $pages) }}
+{{ $details := (delimit ($.Scratch.Get "_details") ", ") }}
+
+{{ (printf $str $authors $year $title $details) | markdownify }}

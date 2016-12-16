@@ -1,0 +1,7 @@
+<li>
+  <div class="li-date">
+    <time datetime="{{ .Date }}">{{ dateFormat "2006.01.02" .Date }}</time>
+  </div>
+  <a href="{{ .Permalink }}">{{ .Title }}</a>
+  {{ if isset .Params "event" }}<span class="li-event">{{ .Params.event }}</span>{{ end }}
+</li>

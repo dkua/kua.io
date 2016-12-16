@@ -1,0 +1,9 @@
+<li class="project">
+  <div class="name"><h5>
+  {{ if isset .Params "link" }}
+    {{ printf "[%s](%s)" .Title .Params.link | markdownify }}
+  {{ end }}
+  </h5></div>
+  <span class="description">{{ .Description | markdownify }}</span>
+  {{ if .Params.read_more }}<span class="readmore"><a href="{{ .Permalink }}">Read more</a></span>{{ end }}
+</li>

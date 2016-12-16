@@ -9,6 +9,10 @@ html {
   font-size: 1.3rem;
 }
 
+header h1 {
+  margin-top: 0;
+}
+
 body {
   line-height: 1.6;
 }
@@ -19,23 +23,24 @@ hr {
   display: block;
   width: 100%;
   border: 0;
-  border-top: 1px solid #696969;
+  border-top: 1px dashed #696969;
 }
 
 img {
   max-width: 100%;
+  border: 1px dashed #696969;
 }
 
 blockquote {
   margin: 0 0 1rem;
-  padding: 1rem 1rem 0;
+  padding: 0 1rem 0 1rem;
   color: #696969;
-  border-left: 1px solid currentColor;
+  border: 1px dashed #696969;
 }
 
 blockquote cite {
   display: block;
-  margin-top: 1rem;
+  margin-top: .5rem;
   font-style: italic;
   font-size: .875rem;
 }
@@ -47,12 +52,13 @@ blockquote cite:before {
 a {
   color: currentColor;
   text-decoration: none;
-  border-bottom: 1px solid currentColor;
+  border-bottom: 2px solid #4078c0;
 }
-  a:hover {
-    text-decoration: none;
-    border-bottom: 0;
-  }
+
+a:hover {
+  text-decoration: none;
+  border-bottom: 0;
+}
 
 ol, ul {
   margin: 0 0 1rem 1.25rem;
@@ -68,6 +74,18 @@ li {
   margin: .3rem 0 0 0;
 }
 
+li .li-date {
+  font-style: italic;
+  float: left;
+  width: 6rem;
+}
+
+li .li-event {
+  font-style: italic;
+  color: #696969;
+  margin-left: .7rem;
+}
+
 abbr {
   border-bottom: 1px dashed currentColor;
   cursor: help;
@@ -75,19 +93,19 @@ abbr {
 
 kbd, code, pre {
   font-family: "Source Code Pro", monospace;
-  font-size: 0.7rem;
-  whitespace: pre;
-  overflow: auto;
+  font-size: .7rem;
+  padding: .3rem 0 0 .3rem;
 }
 
 pre {
+  overflow: auto;
   max-width: 100%;
-  margin: 0 0 1rem;
+  margin: 0;
+  background-color: #e5e5e5;
 }
 
 kbd, code {
   padding: .125rem .25rem 0;
-  margin: 0;
   background-color: #e5e5e5;
 }
 
@@ -96,35 +114,35 @@ article, section {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  margin: 0 0 .5rem;
+  margin: .5rem 0 .5rem 0;
 }
 
 h1 {
-  font-size: 1.6rem;
-}
-
-h2 {
-  font-size: 2rem;
-}
-
-h3 {
-  font-size: 1.75rem;
-}
-
-h4 {
   font-size: 1.5rem;
 }
 
-h5 {
-  font-size: 1.25rem;
+h2 {
+  font-size: 1.3rem;
 }
 
-h6 {
+h3 {
+  font-size: 1.2rem;
+}
+
+h4 {
+  font-size: 1.1rem;
+}
+
+h5 {
   font-size: 1rem;
 }
 
+h6 {
+  font-size: .8em;
+}
+
 p {
-  margin: 0 0 1rem;
+  margin: 1rem 0 1rem 0;
 }
 
 time {
@@ -138,16 +156,16 @@ footer, .site-nav {
   color: #696969;
 }
 
-  footer a, .site-nav a {
-    color: currentColor;
-  }
+footer a, .site-nav a {
+  color: currentColor;
+}
 
-  footer > *+*, .site-nav > *+* {
-    margin-left: .5rem;
-  }
+footer > *+*, .site-nav > *+* {
+  margin-left: .5rem;
+}
 
 .container {
-  max-width: 34rem;
+  max-width: 38rem;
   width: 100%;
   margin: 0 auto;
 }
@@ -164,4 +182,86 @@ footer, .site-nav {
 .site-list {
   margin: 0;
   list-style-type: none;
+}
+
+.site-list li {
+  word-wrap: break-word;
+}
+
+.toc {
+  display: inline-block;
+  border: dashed 1px #696969;
+  padding: .5rem 1rem 0 .5rem;
+  margin-bottom: .5rem;
+  font-family: "Source Code Pro", monospace;
+  color: #696969;
+}
+
+#TableOfContents ul {
+  font-size: 0.7rem;
+  margin-left: 1rem;
+  list-style-type: none;
+}
+
+.highlighttable {
+  display: block;
+  max-width: 100%;
+  overflow: auto;
+  border: 1px dashed #696969;
+}
+
+.linenodiv, .code, .highlight {
+  width: 100%;
+  height: auto;
+  overflow: auto;
+}
+
+.highlight pre {
+  background-color: transparent;
+}
+
+.slide {
+  text-align: center;
+  font-size: .875rem;
+  color: #696969;
+}
+
+.bibliography, .footnotes {
+  display: block;
+  max-width: 100%;
+  border: 1px dashed #696969;
+  padding: 1rem 1rem 0 1rem;
+  color: #696969;
+  font-size: .875rem;
+}
+
+.bibliography ul {
+  display: block;
+  margin-left: 0;
+  list-style-type: none;
+}
+
+.bibliography .tag {
+  float: left;
+  margin-right: 1rem;
+}
+
+.bibliography .citation {
+  margin-left: 1rem;
+}
+
+.bibliography sup a {
+  margin: 0 .1rem 0 .1rem;
+}
+
+.readmore {
+  margin: .5rem 0 1rem 0;
+  color: #696969;
+  font-size: .875rem;
+  text-align: right;
+  float: right;
+}
+
+.readmore a:after {
+  content: " →";
 }

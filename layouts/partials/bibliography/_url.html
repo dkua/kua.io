@@ -1,0 +1,6 @@
+{{ $ref := $.Scratch.Get "ref" }}
+
+{{ $url := $ref.URL }}
+{{ $url := $url | replaceRE "{\\\\&}" "&" }}
+{{ $url := $url | replaceRE "{\\\\_}" "_" }}
+{{ $.Scratch.Set "url" $url }}

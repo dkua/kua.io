@@ -1,0 +1,7 @@
+{{ $ref := $.Scratch.Get "ref" }}
+{{ if isset $ref "issued" }}
+  {{ $date := (index $ref.issued "date-parts" 0) }}
+  {{ $.Scratch.Set "year" (printf "%.0f" (index $date 0)) }}
+{{ else }}
+  {{ $.Scratch.Set "year" "n.d" }}
+{{ end }}

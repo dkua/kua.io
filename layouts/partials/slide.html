@@ -1,0 +1,12 @@
+{{ $num := $.Scratch.Get "slide_number" }}
+{{ $cap := $.Scratch.Get "slide_caption" }}
+{{ $slides := $.Scratch.Get "slide_path" }}
+
+<figure class="slide" id="slide-{{ $num }}">
+  <img src="{{ $slides }}{{ $num }}.png" />
+  <figcaption>
+    Slide #{{ $num }}{{ with $cap }} – {{ $cap | markdownify }}{{ end }}
+    <sup><a href="#slide-{{ $num }}">&para;</a><sup>
+  </figcaption>
+  <p>{{ .Inner }}</p>
+</figure>

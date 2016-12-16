@@ -1,0 +1,17 @@
+{{ $numParams := len .Params }}
+{{ if (eq $numParams 0) }}
+{{ if and (isset .Page.Params "footnotes") (gt (len .Page.Params.footnotes) 0)}}
+{{ $.Scratch.Set "footnotes_source" .Page.Params.footnotes }}
+{{ $src := $.Scratch.Get "footnotes_source" }}
+<div class="footnotes">
+  <ol>
+  {{ range $index, $note := $src }}
+    <li id="footnote-{{ add 1 $index }}">
+    {{ $note | markdownify }}
+    <a href="#note-{{ add 1 $index }}">&#8629;</a>
+    </li>
+  {{ end }}
+  </ol>
+</div>
+{{ end }}
+{{ end }}

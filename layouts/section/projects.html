@@ -1,0 +1,5 @@
+{{ define "main" }}
+<article><section><ul class="site-list">
+{{ range .Data.Pages }}{{ .Render "li" }}{{ end }}
+</ul></section></article>
+{{ end }}

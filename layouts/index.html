@@ -1,10 +1,17 @@
 {{ define "main" }}
+<h1>
+Welcome to my blog, learn more <a href="/about">about me</a> or see what I've written below. Enjoy!
+</h1>
 {{ $.Scratch.Set "list-type" "posts" }}
-{{ partial "topic-list" . }}
+{{ partial "list/topic" . }}
+
+<hr>
 
 {{ $.Scratch.Set "list-type" "talks" }}
-{{ partial "topic-list" . }}
+{{ partial "list/topic" . }}
+
+<hr>
 
 {{ $.Scratch.Set "list-type" "projects" }}
-{{ partial "topic-list" . }}
+{{ partial "list/topic" . }}
 {{ end }}

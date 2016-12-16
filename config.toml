@@ -1,7 +1,6 @@
 baseurl = "http://kua.io"
 title = "kua.io"
 PygmentsCodeFences = true
-pygmentsStyle = "monokai"
 canonifyurls = true
 
 [permalinks]
@@ -15,3 +14,7 @@ canonifyurls = true
   SocialLinks = true
   GithubUsername = "dkua"
   TwitterUsername = "davidkua"
+  FrontPageMax = 10
+
+[blackfriday]
+  hrefTargetBlank = true

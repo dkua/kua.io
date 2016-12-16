@@ -1,0 +1,19 @@
+{{ $numParams := len .Params }}
+{{ if and (ge $numParams 1) (le $numParams 2) }}
+  {{ if .IsNamedParams }}
+    {{ $.Scratch.Set "slide_number" (.Get "number") }}
+    {{ $.Scratch.Set "slide_caption" (.Get "caption") }}
+  {{ else }}
+    {{ $.Scratch.Set "slide_number" (.Get 0) }}
+    {{ if ge $numParams 2 }}
+      {{ $.Scratch.Set "slide_caption" (.Get 1) }}
+    {{ else }}
+      {{ $.Scratch.Set "slide_caption" "" }}
+    {{ end }}
+  {{ end }}
+{{ end }}
+
+{{ if isset .Page.Params "slides" }}
+  {{ $.Scratch.Set "slide_path" (printf "/slides/%s/" .Page.Params.slides) }}
+  {{ partial "slide" $ }}
+{{ end }}

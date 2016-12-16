@@ -1,0 +1,15 @@
+{{ $numParams := len .Params }}
+{{ if eq $numParams 1 }}
+  {{ $.Scratch.Set "citation" (.Get 0) }}
+{{ end }}
+{{ $id := $.Scratch.Get "citation" }}
+
+{{ if isset .Page.Params "bibliography" }}
+  {{ $.Scratch.Set "bib_source" .Page.Params.bibliography }}
+{{ end }}
+{{ $src := (index .Site.Data.bibliographies ($.Scratch.Get "bib_source")) }}
+
+{{ range $ref := first 1 (where $src "id" "eq" $id) }}
+{{ $.Scratch.Set "ref" $ref }}
+<a href="#citation-{{ $id }}" class="cite" id="cite-{{ $id }}">{{ partial "bibliography/tag" $ }}</a>
+{{ end }}

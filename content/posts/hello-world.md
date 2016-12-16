@@ -7,12 +7,12 @@ slug = "hello-world"
 
 Since I am revamping my personal site I might as well put something half useful here as my first post.
 For the first time I am going to be writing down my super secret cookie recipe that all my friends seem to enjoy.
-Also so I can just point them here when they pester me for the recipe.
+Also so I can just point them here when they ask me for the recipe.
 Enjoy!
 
----
+# The Ingredients
 
-| Ingredient | Measurement |
+| Item | Measurement |
 :--- | :---
 Melted Butter | 1.25 cups
 Brown Sugar | 1 cup
@@ -24,6 +24,8 @@ Oatmeal | 2 cup
 Baking Soda | 1 tsp
 Chocolate Chips | 1.75 cups
 Toffee Bits | 0.75 cup
+
+# The Steps
 
 1. Mix melted butter and sugar together.
 2. Add eggs and vanilla extract to butter mixture.

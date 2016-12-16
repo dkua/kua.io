@@ -1,0 +1,11 @@
+{{ $ref := $.Scratch.Get "ref" }}
+
+{{ $.Scratch.Set "publish" slice }}
+
+{{ if isset $ref "publisher" }}
+  {{ $.Scratch.Add "publish" (slice $ref.publisher) }}
+{{ end }}
+
+{{ if isset $ref "publisher-place" }}
+  {{ $.Scratch.Add "publish" (slice (index $ref "publisher-place")) }}
+{{ end }}

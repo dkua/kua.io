@@ -1,0 +1,8 @@
+{{ $numParams := len .Params }}
+{{ if eq $numParams 1 }}
+  {{ $.Scratch.Set "footnote_number" (.Get 0) }}
+{{ end }}
+{{ $num := $.Scratch.Get "footnote_number" }}
+<sup>
+  <a href="#footnote-{{ $num }}" class="footnote" id="note-{{ $num }}">{{ $num }}</a>
+</sup>

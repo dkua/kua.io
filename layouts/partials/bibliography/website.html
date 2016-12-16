@@ -1,0 +1,19 @@
+<!-- Format
+(Authors). (Year). (Title). (URL).
+-->
+{{ $str := "%s. %s. %s. [%s](%s)." }}
+
+<!-- Initialize variables -->
+{{ $ref := ($.Scratch.Get "ref") }}
+{{ partial "bibliography/_authors" $ }}
+{{ partial "bibliography/_year" $ }}
+{{ partial "bibliography/_title" $ }}
+{{ partial "bibliography/_url" $ }}
+
+<!-- Variables -->
+{{ $authors := ($.Scratch.Get "authors") }}
+{{ $year := ($.Scratch.Get "year") }}
+{{ $title := ($.Scratch.Get "title") }}
+{{ $url := ($.Scratch.Get "url") }}
+
+{{ (printf $str $authors $year $title $url $url) | markdownify }}
