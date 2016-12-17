@@ -10,6 +10,6 @@ notoc = true
   * a Speakers Team Member for [CUSEC 2015](http://2015.cusec.net).
   * the University of Toronto's Head Delegate for [CUSEC 2014](http://2014.cusec.net).
 * bake some mean [chocolate-oatmeal-toffee cookies](/posts/2014/01/14/hello-world/).
-* looking for my first full-time software development position, my resume can be found [here](http://bit.ly/davidkua-resume).
+* am looking for my first full-time software development position, my resume can be found [here](http://bit.ly/davidkua-resume).
 
 Feel free to contact me using any of the methods below.
