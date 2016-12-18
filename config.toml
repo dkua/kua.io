@@ -2,6 +2,8 @@ baseurl = "http://kua.io"
 title = "kua.io"
 PygmentsCodeFences = true
 canonifyurls = true
+disableHugoGeneratorInject = true
+enableRobotsTXT = true
 
 [permalinks]
   posts = "/:section/:year/:month/:day/:slug/"
