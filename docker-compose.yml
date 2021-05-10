@@ -1,0 +1,12 @@
+services:
+  build:
+    image: klakegg/hugo:0.82.0
+    volumes:
+      - "$PWD:/src"
+  server:
+    image: klakegg/hugo:0.82.0
+    command: server
+    volumes:
+      - "$PWD:/src"
+    ports:
+      - "1313:1313"
