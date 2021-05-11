@@ -7,8 +7,8 @@ slides = "pyconca2016_talk"
 preamble = "Sorry I still need to annotate the slides!"
 +++
 
-# Video
+## Video
 {{< youtube SQcCmCyuVyo >}}
 
-# Slides
+## Slides
 {{< slides 1 50 >}}

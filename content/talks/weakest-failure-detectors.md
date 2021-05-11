@@ -9,8 +9,8 @@ bibliography_ignore = ""
 preamble = "Sorry I still need to annotate the slides!"
 +++
 
-# Video
+## Video
 {{< youtube 4v2EVATaqJM >}}
 
-# Slides
+## Slides
 {{< slides 1 38 >}}

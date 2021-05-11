@@ -10,7 +10,7 @@ For the first time I am going to be writing down my super secret cookie recipe t
 Also so I can just point them here when they ask me for the recipe.
 Enjoy!
 
-# The Ingredients
+## The Ingredients
 
 | Item | Measurement |
 :--- | :---
@@ -25,7 +25,7 @@ Baking Soda | 1 tsp
 Chocolate Chips | 1.75 cups
 Toffee Bits | 0.75 cup
 
-# The Steps
+## The Steps
 
 1. Mix melted butter and sugar together.
 2. Add eggs and vanilla extract to butter mixture.
