@@ -1,8 +1,8 @@
 {{ $type := $.Scratch.Get "list-type" }}
 <article>
-<h3>{{ title ($.Scratch.Get "list-type") }}</h3>
+<h3>{{ title $type }}</h3>
 <ul class="site-list">
-{{ range first .Site.Params.FrontPageMax (where .Data.Pages "Type" $type) }}
+{{ range where .Site.RegularPages "Type" $type }}
   {{ .Render "li" }}
 {{ end }}
 </ul>
