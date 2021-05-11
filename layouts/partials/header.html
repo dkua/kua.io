@@ -19,7 +19,7 @@
   <h1>{{ .Title }}</h1>
   {{ end }}
 
-  {{ if and .IsHome (isset .Site.Params "Tagline") }}
+  {{ if and .IsHome (isset .Site.Params "tagline") }}
   <p>{{ .Site.Params.Tagline }}</p>
   {{ end }}
 </header>

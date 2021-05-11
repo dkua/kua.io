@@ -11,12 +11,11 @@ enableRobotsTXT = true
   projects = "/:section/:year/:month/:day/:slug/"
 
 [params]
-  AuthorName = "David Kua"
-  Email = "david@kua.io"
-  SocialLinks = true
-  GithubUsername = "dkua"
-  TwitterUsername = "davidkua"
-  FrontPageMax = 10
+  author = "David Kua"
+  email = "david@kua.io"
+  socialLinks = true
+  github = "dkua"
+  frontPageMax = 10
 
 [blackfriday]
   hrefTargetBlank = true
