@@ -1,4 +1,4 @@
-baseurl = "http://kua.io"
+baseurl = "https://kua.io"
 title = "kua.io"
 PygmentsCodeFences = true
 canonifyurls = true
